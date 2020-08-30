@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>budget-calc</title>
+    <link rel="stylesheet" href="b-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="text-budget">Budget Summary</div>
+      <div class="main">
+        <div class="budget edges">
+          <h7>budget</h7>
+          <p class="calci"></p>
+        </div>
+        <div class="budget edges-1">
+          <h7>expenses</h7>
+          <p class="calci"></p>
+        </div>
+        <div class="budget edges-2">
+          <h7>savings</h7>
+          <p class="calci"></p>
+        </div>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="box-1">
+        <input
+          id="bgtNum"
+          class="description"
+          type="number"
+          name="budget"
+          value=""
+          placeholder="Enter Budget Value"
+        />
+        <button class="add-btn">
+          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="select">
+        <label for="expense">Select an Expense:</label>
+        <select name="expense" class="description" id="set">
+          <option value="grocery">grocery</option>
+          <option value="rent">rent</option>
+          <option value="holiday">holiday</option>
+          <option value="bills">bills</option>
+          <option value="medicine">medicine</option>
+          <option value="education">education</option>
+        </select>
+        <button class="add-btn" id="btn">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="calc">
+        <button class="add-btn" id="btn-1">
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div>
+      <h3>EXPENSES</h3>
+      <div class="exp-parent">
+        <div class="exp-main">
+          <div class="exp-div"></div>
+          <div class="exp-div"></div>
+          <div class="exp-div"></div>
+          <div class="exp-div"></div>
+          <div class="exp-div"></div>
+          <div class="exp-div"></div>
+        </div>
+        <div class="exp-main">
+          <div class="value-div"></div>
+          <div class="value-div"></div>
+          <div class="value-div"></div>
+          <div class="value-div"></div>
+          <div class="value-div"></div>
+          <div class="value-div"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
